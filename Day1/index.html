@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile</title>
+</head>
+<body>
+
+    <!-- Three levels of headings -->
+    <h1>Welcome to My Personal Profile</h1>
+    <h2>About Me</h2>
+    <h3>Skills & Interests</h3>
+
+    <!-- Paragraph about yourself with bold and italic formatting -->
+    <p>
+        I am a student studying <b>Web Design and Development</b>, passionate about creating engaging user interfaces. 
+        I enjoy <i>learning new technologies</i> and turning creative ideas into functional websites.
+    </p>
+
+    <!-- Unordered list -->
+    <h2>My Skills</h2>
+    <ul>
+        <li>UI/UX Design</li>
+        <li>HTML & CSS Coding</li>
+        <li>Problem Solving</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <h2>Upcoming Goals</h2>
+    <ol>
+        <li>Master JavaScript</li>
+        <li>Build full-stack web applications</li>
+        <li>Collaborate on innovative design projects</li>
+    </ol>
+
+    <!-- Link to favorite website -->
+    <h2>Favorite Website</h2>
+    <p>
+        You can check out my favorite learning platform here: 
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    </p>
+
+    <!-- Blockquote with a quote -->
+    <h2>Favorite Quote</h2>
+    <blockquote cite="https://example.com">
+        "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+    </blockquote>
+
+    <!-- THREE NEW HTML ELEMENTS WITH COMMENTS EXPLAINING THEIR PURPOSE -->
+
+    <!-- New Element 1: <mark> tag -->
+    <!-- Element 1: <mark> - Used to highlight text with a yellow background for emphasis -->
+    <p>Important Note: <mark>Consistency and clean code</mark> are key to successful web development.</p>
+
+    <!-- New Element 2: <details> and <summary> tags -->
+    <!-- Element 2: <details> & <summary> - Used to create an interactive disclosure widget that toggles open/closed without JavaScript -->
+    <details>
+        <summary>Click here to view extra hobbies</summary>
+        <p>Drawing, reading, and exploring modern UI design trends.</p>
+    </details>
+
+    <!-- New Element 3: <progress> tag -->
+    <!-- Element 3: <progress> - Used to represent the completion progress of a task visually -->
+    <p>Task Completion: <progress value="100" max="100"></progress> 100%</p>
+
+    <br>
+
+    <!-- Contact Form using fieldset and legend -->
+    <fieldset>
+        <legend>Contact Me</legend>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </fieldset>
+
+</body>
+</html>
