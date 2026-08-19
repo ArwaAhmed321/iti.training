@@ -1,4 +1,4 @@
-/* General Setup & Font */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +7,16 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5; /* Background للصفحة */
+    background-color: #f0f2f5; 
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Card Styling & Box Model */
+
 .profile-card {
-    background-color: #ffffff; /* Background للكارت */
+    background-color: #ffffff; 
     width: 320px;
     padding: 24px; /* Box Model: Padding */
     margin: 20px auto; /* Box Model: Margin */
@@ -25,8 +25,6 @@ body {
     text-align: center; /* Typography: text-align */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Bonus: Shadow */
 }
-
-/* Image */
 .profile-img {
     width: 100px;
     height: 100px;
@@ -35,7 +33,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Typography & Fonts */
 .profile-name {
     font-size: 1.5rem; /* CSS Unit: rem */
     font-weight: 700; /* Font-weight */
@@ -58,7 +55,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Button & Bonus Hover */
 .contact-btn {
     display: inline-block;
     width: 100%; /* CSS Unit: % */
@@ -72,7 +68,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Bonus: Hover للزرار */
 .contact-btn:hover {
     background-color: #0056b3;
 }

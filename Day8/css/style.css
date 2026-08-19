@@ -1,0 +1,229 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ====================
+   Hero Section
+==================== */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/family Bakery.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo i {
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+    border-bottom: 2px solid #8c6849;
+    padding-bottom: 3px;
+}
+
+/* Hero Content */
+.hero-content {
+    margin: auto 0;
+    padding: 0 20px;
+}
+
+.hero-content .subtitle {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.hero-content .description {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    font-size: 15px;
+    color: #ddd;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #8c6849;
+    color: #fff;
+    border: 2px solid #8c6849;
+}
+
+.btn-primary:hover {
+    background-color: #725338;
+    border-color: #725338;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* ====================
+   About Section
+==================== */
+.about-section {
+    padding: 90px 0;
+    background-color: #fff;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Features List */
+.features-list {
+    list-style: none;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.features-list .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #8c6849;
+    background-color: #fafafa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .features-list li {
+        justify-content: center;
+    }
+}
